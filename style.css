@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+width: 100%;
+height: 4.5rem;
+border-bottom: 1px solid black;
+background-color: #f6f6f6;
+position: sticky;
+top: 0;
+z-index: 50;
+}
+
+
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.logo{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo span:nth-child(1){
+    background-color: rgb(149, 130, 21);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+
+}
+
+.logo span:nth-child(2){
+    font-weight: 600;
+}
+
+
+.desktop-nav{
+    display: none;
+}
+
+
+.mobile-dropdown{
+     position: absolute; 
+    right: 0;
+     top: 100%; 
+    background-color: #f6f6f6;
+    border-left: 1px solid black;
+     border-bottom: 1px solid black;
+      border-top: 1px solid black;
+      display: flex;
+      flex-direction: column;
+       display: none;  
+       gap: 1rem;
+    
+
+
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.hero-intro{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.hero-intro h1{ 
+    font-size: 1.8rem;
+    margin-top: 30px;
+    
+
+}
+
+.hero-intro p{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    
+
+}
+
+#hero img{
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-image img {
+width: 100%;
+max-width: 250px;
+}
+.about-text p{
+    margin-bottom: 10px;
+}
+.about-text{
+    max-width: 400px;
+}
+
+
+/* Skills Section */
+#skills{
+    padding: 20px;
+    text-align: center;
+}
+#skills h3{
+    padding: 1rem 1rem;
+}
+.skills-container {
+display: grid;
+grid-template-columns: 1fr;
+gap: 20px;
+}
+.skill-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.skill-card:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+/* project */
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+}
+
+#project h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.project-card{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-top: 30px;
+
+}
+.project-card:hover{
+    transform: translateY(-5px);
+}
+
+
+
+/* contact */
+
+#contact{
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 30px;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+
+.contact-form button{
+padding: 10px;
+background-color: black;
+color: white;
+border: none;
+
+}
+
+.socials{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+
+
+}
+
+
+
+
+.socials a{
+    text-decoration: none;
+    color: black;
+    border: 1px sol1d #ccc;
+    padding: 8px 12px ;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.socials a:hover{
+    background-color: black ;
+    color: white;
+
+}
+
+/* footer */
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+}
+
+
+.footer p{
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Poppins' sans-serif;
+}
+
+
+
+
+@media (min-width: 768px) {
+
+    #hero{
+        flex-direction: row;
+    }
+
+    /* About section */
+    .about-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        text-align: left;
+        gap: 30px;
+    }
+    /* Skills setion */
+    .skills-container{
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .project-container{
+grid-template-columns: 1fr 1fr;
+    }
+
+    /* contact */
+    .contact-container{
+grid-template-columns: 1fr 1fr;
+    }
+
+    .socials{
+        justify-content: flex-start;
+    }
+
+
+    /* footer */
+    .footer {
+        font-size: small;
+        
+    }
+
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+    /* Mobile */
+    .mobile{
+        display: none;
+    }
+    .desktop-nav{
+        display: inline-block;
+    }
+    
+     header .desktop-nav{
+        display: flex;
+        gap: 2rem;
+    }
+    .desktop-nav ul{
+        position: absolute;
+        left: 0;
+        margin: 0.2rem;
+        display: none;
+        flex-direction: column;
+        background-color: #f6f6f6;
+        width: fit-content;
+        padding: 2rem 1.5rem;
+            border-left: 1px solid rgb(0, 0, 0.3) ;
+        border-right: 1px solid rgb(0, 0, 0.3) ;
+            border-bottom: 1px solid rgb(0, 0, 0.3) ;
+    }
+/* hero section */
+
+    #hero{
+        flex-direction: row;
+    }
+
+
+
+
+
+
+    
+
+
+
+
+
+#hero img{
+    width: 400px;
+}
+/* About section */
+
+
+.about-container{
+    gap: 40px;
+    padding: 40px;
+}
+.about-image img{
+    max-width: 300px;
+}
+
+/* Skills section */
+
+.skill-card{
+    grid-template-columns: repeat(4 , 1fr);
+}
+
+/* project */
+.project-container{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+
+
+
+
+
