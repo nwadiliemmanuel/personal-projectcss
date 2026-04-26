@@ -106,7 +106,7 @@ header nav{
 }
 
 .hero-intro h1{ 
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin-top: 30px;
     color: #f8fafc;
     
@@ -114,7 +114,7 @@ header nav{
 }
 
 .hero-intro p{
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
     color: #94a3b8;
 }
@@ -132,11 +132,18 @@ header nav{
     
 
 }
+.btn:hover{
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
 
 #hero img{
     width: 200px;
     margin-top: 20px;
     border-radius: 50%;
+    border: 3px solid #3b82f6;
+}
 }
 
 .about-container{
@@ -144,7 +151,7 @@ header nav{
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align: center;
 }
@@ -154,6 +161,13 @@ max-width: 250px;
 }
 .about-text p{
     margin-bottom: 10px;
+    color: #cbd5e1;
+}
+
+.about-text h2{
+    margin-bottom: 10px;
+}
+
 }
 .about-text{
     max-width: 400px;
